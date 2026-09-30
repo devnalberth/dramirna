@@ -105,3 +105,27 @@
   .hero__description { font-size: 16px; }
   .hero__portrait { width: calc(100% + 29px); }
 }
+
+/* Divisor hero/credenciais: nós 20025:509 e 20012:43. */
+.divider-hero { position: relative; z-index: 2; height: 245px; overflow: visible; background: var(--color-bg-canvas); }
+.divider-hero::before { position: absolute; top: -49px; left: 0; width: 100%; height: 50px; background-size: 100% 100%; pointer-events: none; }
+.divider-hero__bands { position: absolute; inset: 0; overflow: hidden; }
+.divider-hero__ribbon { position: absolute; left: 50%; width: calc(100% + 500px); padding-block: 14px; transform-origin: center; }
+.divider-hero__ribbon--rose { top: 90px; transform: translateX(-50%) rotate(7deg); }
+.divider-hero__ribbon--ameixa { top: 90px; transform: translateX(-50%) rotate(-7deg); }
+.divider-hero__ribbon .marquee__group { gap: 18px; padding-inline: 24px; }
+.divider-hero__ribbon .marquee__group > span { flex: none; font: 500 14px/1.2 var(--font-display); letter-spacing: .06em; text-transform: uppercase; }
+.divider-hero__ribbon .marquee__star { width: 11px; height: 11px; }
+.divider-hero__desktop-term { display: none; }
+
+@media (min-width: 1024px) {
+  .divider-hero { height: 285px; background: var(--color-bg-subtle); }
+  .divider-hero::before { top: -119px; height: 120px; }
+  .divider-hero__ribbon { width: calc(100% + 1200px); padding-block: 20px; }
+  .divider-hero__ribbon--rose { top: 65px; transform: translateX(-50%) rotate(4deg); }
+  .divider-hero__ribbon--ameixa { top: 35px; transform: translateX(-50%) rotate(-3deg); }
+  .divider-hero__ribbon .marquee__group { gap: 28px; padding-inline: 40px; }
+  .divider-hero__ribbon .marquee__group > span { font-size: 15px; }
+  .divider-hero__ribbon .marquee__star { width: 14px; height: 14px; }
+  .divider-hero__desktop-term { display: block; }
+}

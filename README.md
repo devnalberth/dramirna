@@ -4,7 +4,7 @@ Implementação mobile first em HTML, CSS e JavaScript puros a partir dos frames
 
 ## Estado
 
-**Fase 0 registrada no commit `fe122e5`. Fase 1 registrada no commit `c41d911`. Cabeçalho da Fase 2 registrado no commit `c533d69`. Hero implementado para revisão.** Estrutura, tokens, assets locais, componentes compartilhados, cabeçalho responsivo e hero preparados. As demais seções serão implementadas uma por aprovação, conforme o briefing.
+**Fase 0 registrada no commit `fe122e5`. Fase 1 registrada no commit `c41d911`. Cabeçalho da Fase 2 registrado no commit `c533d69`. Hero registrado no commit `8f7b328`. Divisor hero/credenciais implementado para revisão.** Estrutura, tokens, assets locais, componentes compartilhados, cabeçalho responsivo, hero e divisor preparados. As demais seções serão implementadas uma por aprovação, conforme o briefing.
 
 ## Como executar
 
@@ -17,8 +17,8 @@ Na raiz do projeto, rode `python3 -m http.server 8000` e abra `http://localhost:
 - `assets/css/base.css`: reset, estilos base e estrutura mínima do header e footer.
 - `assets/css/components.css`: botões, etiquetas, selo, credenciais, cards, FAQ, faixas e divisores da Fase 1.
 - `preview-componentes.html`: prévia de desenvolvimento para conferir as variantes da Fase 1.
-- `assets/css/sections.css`: cabeçalho e hero responsivos; demais seções serão adicionadas nas próximas etapas.
-- `assets/js/main.js` e `assets/js/modules/`: menu, rolagem do cabeçalho e links contextuais do WhatsApp; FAQ e faixas ficam para suas seções.
+- `assets/css/sections.css`: cabeçalho, hero e divisor responsivos; demais seções serão adicionadas nas próximas etapas.
+- `assets/js/main.js` e `assets/js/modules/`: menu, rolagem do cabeçalho, links contextuais do WhatsApp e faixas em movimento; FAQ fica para sua seção.
 - `assets/img/`: fotos em WebP e fallback, favicon e imagem de compartilhamento.
 - `assets/svg/`: vetores exportados do Figma.
 - `ASSETS.md`: inventário com o peso de cada arquivo exportado.
