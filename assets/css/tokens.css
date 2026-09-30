@@ -1,0 +1,77 @@
+:root {
+  --ms-ameixa-900: #3a2b47;
+  --ms-ameixa-800: #503c61;
+  --ms-ameixa-600: #6e5a80;
+  --ms-ameixa-400: #877696;
+  --ms-lilas-400: #b29cb3;
+  --ms-lilas-300: #cfbacb;
+  --ms-lilas-200: #e3d6e0;
+  --ms-lilas-100: #ede4eb;
+  --ms-rose-300: #f1d8db;
+  --ms-rose-100: #f9eeef;
+  --ms-perola-200: #ebeae8;
+  --ms-perola-100: #f6f4f2;
+  --ms-perola-000: #ffffff;
+  --ms-agua-400: #74cecf;
+  --ms-agua-600: #2f7a79;
+  --ms-salvia-400: #7aaa9a;
+  --ms-tinta-900: #2e2338;
+  --ms-tinta-600: #5e5068;
+  --ms-tinta-400: #76697f;
+  --color-bg-canvas: var(--ms-perola-100);
+  --color-bg-surface: var(--ms-perola-000);
+  --color-bg-subtle: var(--ms-lilas-100);
+  --color-bg-blush: var(--ms-rose-100);
+  --color-bg-accent: var(--ms-lilas-300);
+  --color-bg-rose: var(--ms-rose-300);
+  --color-bg-inverse: var(--ms-ameixa-800);
+  --color-bg-inverse-deep: var(--ms-ameixa-900);
+  --color-action-primary: var(--ms-ameixa-800);
+  --color-action-primary-hover: var(--ms-ameixa-900);
+  --color-text-primary: var(--ms-tinta-900);
+  --color-text-secondary: var(--ms-tinta-600);
+  --color-text-muted: var(--ms-tinta-400);
+  --color-text-accent: var(--ms-ameixa-800);
+  --color-text-on-inverse: var(--ms-perola-000);
+  --color-text-on-inverse-muted: var(--ms-lilas-300);
+  --color-border-default: var(--ms-lilas-200);
+  --color-border-strong: var(--ms-lilas-400);
+  --color-border-inverse: var(--ms-ameixa-600);
+  --color-icon-primary: var(--ms-ameixa-800);
+  --color-icon-accent: var(--ms-agua-600);
+  --color-deco-agua: var(--ms-agua-400);
+  --gradient-brand-vertical: linear-gradient(180deg, #877696 0%, #b29cb3 45%, #d9c9d6 80%, #f6f1f2 100%);
+  --gradient-brand-horizontal: linear-gradient(90deg, #f6f1f2 0%, #d9c9d6 20%, #b29cb3 55%, #877696 100%);
+  --font-display: "Jost", system-ui, sans-serif;
+  --font-body: "Nunito Sans", system-ui, sans-serif;
+  --font-destaque: "Cormorant Garamond", Georgia, serif;
+  --space-4: 4px;
+  --space-8: 8px;
+  --space-12: 12px;
+  --space-16: 16px;
+  --space-24: 24px;
+  --space-32: 32px;
+  --space-48: 48px;
+  --space-64: 64px;
+  --space-96: 96px;
+  --space-120: 120px;
+  --radius-8: 8px;
+  --radius-16: 16px;
+  --radius-24: 24px;
+  --radius-32: 32px;
+  --radius-full: 999px;
+  --shadow-soft: 0 8px 24px rgb(80 60 97 / 8%);
+  --shadow-floating: 0 20px 48px rgb(80 60 97 / 14%);
+  --container: 1200px;
+  --gutter: 20px;
+  --section-y: var(--space-64);
+  --header-height: 68px;
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --gutter: 24px;
+    --section-y: var(--space-120);
+    --header-height: 97px;
+  }
+}
