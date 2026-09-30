@@ -178,6 +178,28 @@
 .process__actions p { margin: 0; color: var(--color-text-on-inverse-muted); font: 400 14px/1.55 var(--font-body); }
 .process__desktop { display: none; }
 
+/* DIU e Implanon: nós 20025:689 e 20014:141. */
+.diu { padding-block: 64px; background: var(--color-bg-canvas); }
+.diu__inner { display: flex; flex-direction: column; gap: 22px; }
+.diu__copy { display: contents; }
+.diu__eyebrow { order: 1; }
+.diu__title { order: 2; margin: 0; color: var(--color-text-primary); font: 400 30px/1.25 var(--font-display); letter-spacing: -.01em; }
+.diu__title em { color: var(--color-text-accent); font: italic 500 33px/1.2 var(--font-destaque); }
+.diu__media { order: 3; position: relative; width: 100%; height: 400px; }
+.diu__photo { display: block; width: 100%; height: 100%; overflow: hidden; border-radius: 24px 140px 24px 24px; }
+.diu__photo img { width: 100%; height: 100%; object-fit: cover; }
+.diu__chip { position: absolute; top: 320px; left: 16px; display: flex; align-items: center; gap: 12px; padding: 12px 18px 12px 12px; border-radius: 18px; background: var(--color-bg-surface); box-shadow: var(--shadow-floating); }
+.diu__chip-icon { width: 40px; height: 40px; flex: none; display: grid; place-items: center; border-radius: 50%; background: var(--color-bg-blush); }
+.diu__chip-icon img { width: 16px; height: 16px; }
+.diu__chip strong, .diu__chip small { display: block; white-space: nowrap; }
+.diu__chip strong { color: var(--color-text-primary); font: 600 16px/1.65 var(--font-body); }
+.diu__chip small { color: var(--color-text-secondary); font: 400 14px/1.55 var(--font-body); }
+.diu__lead { order: 4; margin: 0; color: var(--color-text-secondary); font: 400 17px/1.6 var(--font-body); }
+.diu__text { order: 5; margin: 0; color: var(--color-text-secondary); font: 400 16px/1.65 var(--font-body); }
+.diu__list { order: 6; display: flex; flex-direction: column; gap: 12px; }
+.diu__cta { order: 7; }
+.diu__desktop { display: none; }
+
 @media (min-width: 768px) and (max-width: 1023px) {
   .process__steps { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
@@ -248,6 +270,20 @@
   .process__actions { align-items: center; gap: 14px; }
   .process__mobile { display: none; }
   .process__desktop { display: inline; }
+  .diu { padding-block: 140px; background: var(--color-bg-subtle); }
+  .diu__inner { display: grid; grid-template-columns: minmax(0, 1fr) 500px; align-items: center; gap: 96px; }
+  .diu__copy { display: flex; flex-direction: column; align-items: flex-start; gap: 24px; }
+  .diu__title { font-size: 44px; line-height: 1.2; }
+  .diu__title em { font-size: 48px; line-height: 1.15; }
+  .diu__lead { font-size: 18px; }
+  .diu__list { gap: 14px; }
+  .diu__media { order: 0; width: 500px; height: 600px; }
+  .diu__photo { border-radius: 32px 220px 32px 32px; }
+  .diu__chip { top: 470px; left: -60px; padding: 14px 22px 14px 14px; border-radius: 20px; }
+  .diu__chip-icon { width: 44px; height: 44px; }
+  .diu__chip-icon img { width: 18px; height: 18px; }
+  .diu__mobile { display: none; }
+  .diu__desktop { display: inline; }
 }
 
 @media (min-width: 1024px) and (max-width: 1279px) {
@@ -261,6 +297,11 @@
   .solution__title em { font-size: 42px; }
   .process__steps { gap: 12px; }
   .process__steps .card-etapa { padding: 22px; }
+  .diu__inner { grid-template-columns: minmax(0, 1fr) 42%; gap: 48px; }
+  .diu__title { font-size: 38px; }
+  .diu__title em { font-size: 42px; }
+  .diu__media { width: 100%; height: 540px; }
+  .diu__chip { left: -24px; }
 }
 
 @media (min-width: 1024px) and (max-width: 1279px) {
