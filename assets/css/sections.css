@@ -160,6 +160,28 @@
 .solution__cta { order: 7; }
 .solution__desktop { display: none; }
 
+/* Como funciona: nós 20025:649 e 20013:141. */
+.process { position: relative; isolation: isolate; overflow: hidden; padding-block: 80px 72px; background: var(--color-bg-inverse); }
+.process__wave { position: absolute; z-index: 0; top: -1px; left: 0; width: 100%; height: 40px; }
+.process__wave img { width: 100%; height: 100%; }
+.process__decoration { position: absolute; z-index: 0; top: 120px; left: 160px; width: 360px; height: 360px; opacity: .5; }
+.process__decoration img { width: 100%; height: 100%; max-width: none; }
+.process__inner { position: relative; z-index: 1; display: flex; flex-direction: column; gap: 28px; }
+.process__intro { display: flex; flex-direction: column; align-items: flex-start; gap: 16px; }
+.process__title { margin: 0; color: var(--color-text-on-inverse); font: 400 30px/1.25 var(--font-display); letter-spacing: -.01em; }
+.process__title em { color: var(--color-text-on-inverse-muted); font: italic 500 33px/1.2 var(--font-destaque); }
+.process__description { margin: 0; color: var(--color-text-on-inverse-muted); font: 400 17px/1.6 var(--font-body); }
+.process__steps { position: relative; display: grid; gap: 14px; }
+.process__line { display: none; }
+.process__steps .card-etapa { position: relative; z-index: 1; }
+.process__actions { display: flex; flex-direction: column; align-items: flex-start; gap: 12px; }
+.process__actions p { margin: 0; color: var(--color-text-on-inverse-muted); font: 400 14px/1.55 var(--font-body); }
+.process__desktop { display: none; }
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .process__steps { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
 @media (min-width: 768px) and (max-width: 1023px) {
   .solution__media { width: 540px; margin-inline: auto; }
   .solution__photo { width: 400px; }
@@ -212,6 +234,20 @@
   .solution__list { gap: 14px; }
   .solution__mobile { display: none; }
   .solution__desktop { display: inline; }
+  .process { padding-block: 120px 140px; }
+  .process__wave { height: 90px; }
+  .process__decoration { top: 260px; left: -260px; width: 620px; height: 620px; }
+  .process__inner { align-items: center; gap: 56px; }
+  .process__intro { align-items: center; gap: 20px; text-align: center; }
+  .process__title { font-size: 44px; line-height: 1.2; }
+  .process__title em { font-size: 48px; line-height: 1.15; }
+  .process__description { max-width: 620px; font-size: 18px; }
+  .process__steps { width: 100%; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 24px; }
+  .process__line { position: absolute; z-index: 0; top: 56px; left: 50px; width: calc(100% - 100px); height: 2px; display: block; }
+  .process__steps .card-etapa { min-height: 297px; }
+  .process__actions { align-items: center; gap: 14px; }
+  .process__mobile { display: none; }
+  .process__desktop { display: inline; }
 }
 
 @media (min-width: 1024px) and (max-width: 1279px) {
@@ -223,6 +259,8 @@
   .solution__media { width: 100%; transform: scale(.78); transform-origin: left center; }
   .solution__title { font-size: 38px; }
   .solution__title em { font-size: 42px; }
+  .process__steps { gap: 12px; }
+  .process__steps .card-etapa { padding: 22px; }
 }
 
 @media (min-width: 1024px) and (max-width: 1279px) {
