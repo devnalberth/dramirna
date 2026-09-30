@@ -516,3 +516,56 @@
   .faq__title { font-size: 38px; }
   .faq__title em { font-size: 42px; }
 }
+
+/* Onde atendo: nós 20025:1001 e 20017:327. */
+.location { position: relative; padding-block: 72px 64px; background: var(--color-bg-canvas); }
+.location__divider { position: absolute; top: -34px; left: 50%; display: flex; align-items: center; gap: 16px; height: 68px; transform: translateX(-50%); }
+.location__divider::before, .location__divider::after { content: ""; height: 1px; flex: 1; background: var(--color-border-strong); }
+.location__divider span { width: 68px; height: 68px; flex: none; display: grid; place-items: center; border: 1px solid var(--color-border-default); border-radius: 50%; background: var(--color-bg-surface); }
+.location__divider img { width: 34px; height: 34px; }
+.location__inner { display: flex; flex-direction: column; gap: 16px; }
+.location__card { display: flex; flex-direction: column; align-items: flex-start; gap: 20px; padding: 28px 24px; border-radius: 24px; background: var(--color-bg-surface); box-shadow: var(--shadow-soft); }
+.location__title { margin: 0; color: var(--color-text-primary); font: 400 30px/1.25 var(--font-display); letter-spacing: -.01em; }
+.location__title em { color: var(--color-text-accent); font: italic 500 33px/1.2 var(--font-destaque); }
+.location__details { display: grid; gap: 20px; margin: 0; width: 100%; }
+.location__detail { display: grid; grid-template-columns: 40px minmax(0,1fr); column-gap: 14px; }
+.location__detail dt { display: contents; color: var(--color-text-muted); font: 500 12px/1.2 var(--font-display); letter-spacing: .2em; text-transform: uppercase; }
+.location__detail-icon { grid-column: 1; grid-row: 1 / 3; width: 40px; height: 40px; display: grid; place-items: center; border-radius: 50%; background: var(--color-bg-subtle); }
+.location__detail-icon img { width: 20px; height: 20px; }
+.location__detail dd { grid-column: 2; margin: 2px 0 0; color: var(--color-text-primary); font: 400 16px/1.65 var(--font-body); }
+.location__detail a { text-decoration: none; }
+.location__detail a:hover { text-decoration: underline; text-underline-offset: 3px; }
+.location__detail--region { display: none; }
+.location__map { height: 240px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; border: 1px solid var(--color-border-default); border-radius: 24px; background: var(--color-bg-subtle); }
+.location__map-icon { width: 60px; height: 60px; display: grid; place-items: center; border-radius: 50%; background: var(--color-bg-inverse); }
+.location__map-icon img { width: 26px; height: 26px; }
+.location__map-label { color: var(--color-text-accent); font: 500 12px/1.2 var(--font-display); letter-spacing: .2em; text-align: center; text-transform: uppercase; }
+.location__map-desktop { display: none; }
+@media (min-width: 1024px) {
+  .location { padding-block: 140px; }
+  .location__divider { top: -44px; gap: 24px; height: 88px; }
+  .location__divider span { width: 88px; height: 88px; }
+  .location__divider img { width: 44px; height: 44px; }
+  .location__inner { display: grid; grid-template-columns: 500px minmax(0,1fr); gap: 32px; }
+  .location__card { gap: 28px; padding: 48px; border-radius: 32px; }
+  .location__title { font-size: 44px; line-height: 1.2; }
+  .location__title em { font-size: 48px; line-height: 1.15; }
+  .location__details { gap: 28px; }
+  .location__detail { grid-template-columns: 44px minmax(0,1fr); column-gap: 16px; }
+  .location__detail dt { font-size: 13px; }
+  .location__detail-icon { width: 44px; height: 44px; }
+  .location__detail-icon img { width: 22px; height: 22px; }
+  .location__detail--region { display: grid; }
+  .location__map { height: 100%; min-height: 610px; gap: 12px; border-radius: 32px; }
+  .location__map-icon { width: 72px; height: 72px; box-shadow: var(--shadow-floating); }
+  .location__map-icon img { width: 32px; height: 32px; }
+  .location__map-label { font-size: 13px; }
+  .location__map-mobile { display: none; }
+  .location__map-desktop { display: inline; }
+}
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .location__inner { grid-template-columns: 46% minmax(0,1fr); }
+  .location__card { padding: 36px; }
+  .location__title { font-size: 38px; }
+  .location__title em { font-size: 42px; }
+}
