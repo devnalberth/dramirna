@@ -40,7 +40,7 @@
   --color-icon-primary: var(--ms-ameixa-800);
   --color-icon-accent: var(--ms-agua-600);
   --color-deco-agua: var(--ms-agua-400);
-  --gradient-brand-vertical: linear-gradient(180deg, #877696 0%, #b29cb3 45%, #d9c9d6 80%, #f6f1f2 100%);
+  --gradient-brand-vertical: linear-gradient(180deg, #f6f1f2 0%, #d9c9d6 45%, #877696 100%);
   --gradient-brand-horizontal: linear-gradient(90deg, #f6f1f2 0%, #d9c9d6 20%, #b29cb3 55%, #877696 100%);
   --font-display: "Jost", system-ui, sans-serif;
   --font-body: "Nunito Sans", system-ui, sans-serif;
