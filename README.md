@@ -4,7 +4,7 @@ Implementação mobile first em HTML, CSS e JavaScript puros a partir dos frames
 
 ## Estado
 
-**Fase 0 registrada no commit `fe122e5`. Fase 1 registrada no commit `c41d911`. Seção 00 da Fase 2 implementada para revisão.** Estrutura, tokens, assets locais, componentes compartilhados e cabeçalho responsivo preparados. As demais seções serão implementadas uma por aprovação, conforme o briefing.
+**Fase 0 registrada no commit `fe122e5`. Fase 1 registrada no commit `c41d911`. Cabeçalho da Fase 2 registrado no commit `c533d69`. Hero implementado para revisão.** Estrutura, tokens, assets locais, componentes compartilhados, cabeçalho responsivo e hero preparados. As demais seções serão implementadas uma por aprovação, conforme o briefing.
 
 ## Como executar
 
@@ -17,7 +17,7 @@ Na raiz do projeto, rode `python3 -m http.server 8000` e abra `http://localhost:
 - `assets/css/base.css`: reset, estilos base e estrutura mínima do header e footer.
 - `assets/css/components.css`: botões, etiquetas, selo, credenciais, cards, FAQ, faixas e divisores da Fase 1.
 - `preview-componentes.html`: prévia de desenvolvimento para conferir as variantes da Fase 1.
-- `assets/css/sections.css`: cabeçalho responsivo; demais seções serão adicionadas nas próximas etapas.
+- `assets/css/sections.css`: cabeçalho e hero responsivos; demais seções serão adicionadas nas próximas etapas.
 - `assets/js/main.js` e `assets/js/modules/`: menu, rolagem do cabeçalho e links contextuais do WhatsApp; FAQ e faixas ficam para suas seções.
 - `assets/img/`: fotos em WebP e fallback, favicon e imagem de compartilhamento.
 - `assets/svg/`: vetores exportados do Figma.
@@ -32,4 +32,4 @@ Na raiz do projeto, rode `python3 -m http.server 8000` e abra `http://localhost:
 - Implementar as demais seções, o FAQ e as faixas nas fases aprovadas.
 - Revalidar o tamanho final de cada imagem contra seu slot quando a seção correspondente for construída. Os originais exportados foram limitados a 1600 px no lado maior nesta fase; o selo circular conserva a resolução original do Figma.
 
-O header e o footer desta fase são esqueletos e ainda não representam a composição final dos frames.
+O footer ainda é um esqueleto e não representa a composição final do Figma.
