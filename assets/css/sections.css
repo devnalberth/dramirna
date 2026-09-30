@@ -636,3 +636,9 @@
   .site-footer__column p, .site-footer__column a { font-size: 12px; }
   .site-footer__bar { font-size: 12px; }
 }
+
+.whatsapp-float { position: fixed; z-index: 15; right: 20px; bottom: 20px; width: 60px; height: 60px; display: grid; place-items: center; border: 3px solid var(--color-bg-surface); border-radius: 50%; background: var(--color-action-primary); box-shadow: var(--shadow-floating); transition: transform .2s ease, background-color .2s ease; }
+.whatsapp-float:hover { transform: translateY(-3px); background: var(--color-action-primary-hover); }
+.whatsapp-float img { width: 30px; height: 30px; }
+@media (min-width: 1024px) { .whatsapp-float { right: 32px; bottom: 32px; width: 64px; height: 64px; } }
+@media (prefers-reduced-motion: reduce) { .whatsapp-float { transition: none; } }
