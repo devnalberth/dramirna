@@ -12,7 +12,5 @@ a { color: inherit; }
 .skip-link:focus { transform: translateY(0); }
 .is-pending { text-decoration: underline dotted; text-underline-offset: 3px; }
 .site-footer { background: var(--color-bg-inverse-deep); color: var(--color-text-on-inverse-muted); }
-.site-footer__inner { display: grid; gap: var(--space-16); padding-block: var(--space-48); }
 .site-footer p { margin: 0; }
-@media (min-width: 768px) { .site-footer__inner { grid-template-columns: repeat(3, 1fr); align-items: start; } }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
