@@ -65,7 +65,7 @@
   --container: 1200px;
   --gutter: 20px;
   --section-y: var(--space-64);
-  --header-height: 68px;
+  --header-height: 77px;
 }
 
 @media (min-width: 1024px) {

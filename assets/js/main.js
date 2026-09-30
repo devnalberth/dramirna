@@ -1,1 +1,5 @@
-// Fase 1 e seguintes: inicialização dos módulos de interação.
+import { initHeader } from './modules/header.js';
+import { initWhatsAppLinks } from './modules/whatsapp.js';
+
+initHeader();
+initWhatsAppLinks();

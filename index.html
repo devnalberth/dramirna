@@ -45,15 +45,29 @@
 </head>
 <body>
   <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <span class="header-sentinel" aria-hidden="true"></span>
   <header class="site-header">
     <div class="container site-header__inner">
       <a class="site-header__brand" href="#inicio" aria-label="Dra. Mirna Santana, início">
-        <img src="assets/svg/logo-wordmark.svg" alt="Dra. Mirna Santana, Ginecologia e Obstetrícia" width="220" height="35">
+        <picture>
+          <source media="(min-width: 1024px)" srcset="assets/img/logo-wordmark-header-desktop.webp" type="image/webp">
+          <source media="(min-width: 1024px)" srcset="assets/img/logo-wordmark-header-desktop.png" type="image/png">
+          <img class="site-header__logo" src="assets/svg/logo-wordmark.svg" alt="Dra. Mirna Santana, Ginecologia e Obstetrícia" width="150" height="24" decoding="async">
+        </picture>
       </a>
-      <nav class="site-header__nav" aria-label="Navegação principal">
-        <!-- Fase 2: links serão adicionados com suas seções correspondentes. -->
+      <button class="site-header__menu-toggle" type="button" aria-label="Abrir menu" aria-controls="menu-principal" aria-expanded="false">
+        <img src="assets/svg/icone-menu.svg" alt="" width="22" height="22" aria-hidden="true">
+      </button>
+      <nav class="site-header__nav" id="menu-principal" aria-label="Navegação principal">
+        <a href="#inicio">Início</a>
+        <a href="#corrimento">Corrimento</a>
+        <a href="#como-funciona">Como funciona</a>
+        <a href="#diu-e-implanon">DIU e Implanon</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#duvidas">Dúvidas</a>
+        <a class="btn btn--primary site-header__mobile-cta" data-wa="header" href="https://wa.me/5527997930889" target="_blank" rel="noopener"><span class="btn__label">Agendar consulta</span><span class="btn__icon" aria-hidden="true"><img src="assets/svg/icone-seta.svg" alt="" width="20" height="20"></span></a>
       </nav>
-      <a class="site-header__contact" data-wa="header" href="https://wa.me/5527997930889" target="_blank" rel="noopener">Agendar consulta</a>
+      <a class="btn btn--primary site-header__contact" data-wa="header" href="https://wa.me/5527997930889" target="_blank" rel="noopener"><span class="btn__label">Agendar consulta</span><span class="btn__icon" aria-hidden="true"><img src="assets/svg/icone-seta.svg" alt="" width="20" height="20"></span></a>
     </div>
   </header>
   <main id="conteudo">
