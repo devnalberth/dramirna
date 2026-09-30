@@ -569,3 +569,34 @@
   .location__title { font-size: 38px; }
   .location__title em { font-size: 42px; }
 }
+
+/* CTA final: nós 20026:654 e 20017:385. */
+.final-cta { display: flex; justify-content: center; padding-inline: var(--gutter); background: linear-gradient(to bottom, var(--color-bg-canvas) 0 72%, var(--color-bg-inverse-deep) 72% 100%); }
+.final-cta__card { position: relative; isolation: isolate; display: flex; flex-direction: column; align-items: flex-start; gap: 18px; width: min(100%,350px); padding: 36px 24px; overflow: hidden; border-radius: 32px; background: var(--gradient-brand-vertical); box-shadow: var(--shadow-floating); }
+.final-cta__content { display: contents; }
+.final-cta__card .eyebrow { position: relative; z-index: 1; }
+.final-cta__title { position: relative; z-index: 1; margin: 0; color: var(--color-text-primary); font: 400 30px/1.25 var(--font-display); letter-spacing: -.01em; }
+.final-cta__title em { color: var(--color-text-accent); font: italic 500 33px/1.2 var(--font-destaque); }
+.final-cta__text { position: relative; z-index: 1; margin: 0; color: var(--color-text-secondary); font: 400 16px/1.65 var(--font-body); }
+.final-cta__card .btn { position: relative; z-index: 1; }
+.final-cta__location { display: none; }
+.final-cta__photo { display: block; width: 100%; height: 346px; flex: none; overflow: hidden; border-radius: 151px 151px 0 0; background: rgb(255 255 255 / 18%); }
+.final-cta__photo img { width: 100%; height: 100%; object-fit: cover; object-position: center 35%; }
+@media (min-width: 1024px) {
+  .final-cta { background: linear-gradient(to bottom, var(--color-bg-canvas) 0 50%, var(--color-bg-inverse-deep) 50% 100%); }
+  .final-cta__card { flex-direction: row; align-items: center; gap: 40px; width: min(100%,1210px); padding: 40px 80px; border-radius: 40px; background: var(--gradient-brand-horizontal); }
+  .final-cta__card::before { content: ""; position: absolute; z-index: -1; top: -60px; right: -70px; width: 520px; height: 520px; background: url("../svg/logo-simbolo-cta-desktop.svg") center/contain no-repeat; }
+  .final-cta__content { display: flex; flex-direction: column; align-items: flex-start; gap: 24px; width: 590px; flex: none; }
+  .final-cta__title { max-width: 580px; font-size: 44px; line-height: 1.2; }
+  .final-cta__title em { font-size: 48px; line-height: 1.15; }
+  .final-cta__text { max-width: 540px; font-size: 18px; line-height: 1.6; }
+  .final-cta__location { display: block; margin: 0; color: var(--color-text-secondary); font: 400 14px/1.55 var(--font-body); }
+  .final-cta__photo { width: 420px; height: 480px; border: 1.5px dashed var(--color-bg-surface); border-radius: 210px 210px 0 0; }
+}
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .final-cta__card { gap: 24px; padding-inline: 48px; }
+  .final-cta__content { flex: 1; min-width: 0; }
+  .final-cta__title { font-size: 38px; }
+  .final-cta__title em { font-size: 42px; }
+  .final-cta__photo { width: 36%; }
+}
