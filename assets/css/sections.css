@@ -200,6 +200,24 @@
 .diu__cta { order: 7; }
 .diu__desktop { display: none; }
 
+/* Outros cuidados: nós 20025:732 e 20014:189. */
+.care { padding-block: 64px; background: var(--color-bg-subtle); }
+.care__inner { display: flex; flex-direction: column; gap: 22px; }
+.care__header, .care__heading { display: flex; flex-direction: column; align-items: flex-start; gap: 22px; }
+.care__title { margin: 0; color: var(--color-text-primary); font: 400 30px/1.25 var(--font-display); letter-spacing: -.01em; }
+.care__title em { color: var(--color-text-accent); font: italic 500 33px/1.2 var(--font-destaque); }
+.care__description { margin: 0; color: var(--color-text-secondary); font: 400 17px/1.6 var(--font-body); }
+.care__cards { display: grid; gap: 16px; }
+.care .card-servico__body { gap: 8px; padding-bottom: 20px; }
+.care .card-servico__title { font-size: 30px; }
+.care .card-servico__link { position: relative; min-height: 32px; font-size: 15px; }
+.care .card-servico__link::before { content: ""; position: absolute; inset: -8px 0; }
+.care .card-servico__link img { width: 18px; height: 18px; }
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .care__cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
 @media (min-width: 768px) and (max-width: 1023px) {
   .process__steps { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
@@ -284,6 +302,16 @@
   .diu__chip-icon img { width: 18px; height: 18px; }
   .diu__mobile { display: none; }
   .diu__desktop { display: inline; }
+  .care { padding-block: 120px 140px; }
+  .care__inner { gap: 56px; }
+  .care__header { flex-direction: row; align-items: flex-end; justify-content: space-between; gap: 48px; }
+  .care__heading { gap: 20px; }
+  .care__title { max-width: 560px; font-size: 44px; line-height: 1.2; }
+  .care__title em { display: block; font-size: 48px; line-height: 1.15; }
+  .care__description { max-width: 460px; font-size: 18px; }
+  .care__cards { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 36px; }
+  .care .card-servico__body { min-height: 194px; flex: 1; }
+  .care .card-servico__link { margin-top: auto; }
 }
 
 @media (min-width: 1024px) and (max-width: 1279px) {
@@ -302,6 +330,8 @@
   .diu__title em { font-size: 42px; }
   .diu__media { width: 100%; height: 540px; }
   .diu__chip { left: -24px; }
+  .care__cards { gap: 20px; }
+  .care .card-servico__title { font-size: 25px; }
 }
 
 @media (min-width: 1024px) and (max-width: 1279px) {
