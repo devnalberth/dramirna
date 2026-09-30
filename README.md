@@ -1,35 +1,28 @@
 # Landing page Dra. Mirna Santana
 
-Implementação mobile first em HTML, CSS e JavaScript puros a partir dos frames mobile `20025:351` e desktop `20011:16` do Figma.
+Landing page responsiva em HTML, CSS e JavaScript puros, implementada a partir dos frames mobile `20025:351` e desktop `20011:16` do Figma. Cada fase foi registrada em um commit curto.
 
-## Estado
-
-Implementação em andamento, com um commit curto ao concluir cada seção. O histórico está em `git log --oneline`.
-
-## Como executar
+## Executar
 
 Na raiz do projeto, rode `python3 -m http.server 8000` e abra `http://localhost:8000/`.
 
 ## Estrutura
 
-- `index.html`: head, dados estruturados da médica, skip link, header, main e footer.
-- `assets/css/tokens.css`: cores, tipografia, espaçamentos, raios e sombras confirmados no Figma.
-- `assets/css/base.css`: reset, estilos base e estrutura mínima do header e footer.
-- `assets/css/components.css`: botões, etiquetas, selo, credenciais, cards, FAQ, faixas e divisores da Fase 1.
-- `preview-componentes.html`: prévia de desenvolvimento para conferir as variantes da Fase 1.
-- `assets/css/sections.css`: estilos responsivos das seções da página.
-- `assets/js/main.js` e `assets/js/modules/`: menu, rolagem do cabeçalho, links contextuais do WhatsApp e faixas em movimento; FAQ fica para sua seção.
-- `assets/img/`: fotos em WebP e fallback, favicon e imagem de compartilhamento.
-- `assets/svg/`: vetores exportados do Figma.
-- `ASSETS.md`: inventário com o peso de cada arquivo exportado.
+- `index.html`: conteúdo, SEO, dados estruturados, seções e rodapé.
+- `assets/css/`: tokens, base, componentes e estilos das seções.
+- `assets/js/modules/`: menu, FAQ, faixas em movimento e links de WhatsApp.
+- `assets/img/` e `assets/svg/`: fotos e vetores locais exportados do Figma.
+- `assets/fonts/`: fontes locais em WOFF2 e respectivas licenças OFL.
+- `ASSETS.md`: inventário dos arquivos de imagem e vetor.
+- `preview-componentes.html`: prévia de desenvolvimento dos componentes base.
 
-## Pendências
+## Pendências antes da publicação
 
-- Confirmar domínio de produção para `canonical` e URLs absolutas de Open Graph e Twitter Card.
-- Inserir as 11 perguntas e respostas do Figma em `FAQPage` ao implementar a seção FAQ.
-- Confirmar bairro, sala, CEP, horário de atendimento, formação, residência, tipos de DIU, prazo do resultado da microscopia e convênios. Esses textos devem manter o marcador `<!-- PENDENTE: ... -->` e a classe `.is-pending` até a confirmação.
-- Os destinos dos links do menu (`#inicio`, `#corrimento`, `#como-funciona`, `#diu-e-implanon`, `#sobre`, `#duvidas`) serão criados com as respectivas seções.
-- Implementar as demais seções e o FAQ, com commit ao concluir cada etapa.
-- Revalidar o tamanho final de cada imagem contra seu slot quando a seção correspondente for construída. Os originais exportados foram limitados a 1600 px no lado maior nesta fase; o selo circular conserva a resolução original do Figma.
+- Confirmar o domínio de produção para adicionar `canonical` e URLs absolutas de Open Graph e Twitter Card.
+- Confirmar bairro, sala, CEP, horário, formação, residência, tempo de atuação, tipos de DIU, prazo do resultado da microscopia e convênios. Os campos estão marcados com `.is-pending` e comentários `PENDENTE` no HTML.
+- Revisar as respostas das perguntas 2 a 11 do FAQ. O Figma apresenta a resposta completa apenas da primeira pergunta; as demais receberam textos provisórios para manter o acordeão funcional.
+- Incorporar o mapa oficial do Google Meu Negócio quando o link ou código de incorporação estiver disponível. O botão **Como chegar** já abre uma busca pelo endereço no Google Maps.
 
-O footer ainda é um esqueleto e não representa a composição final do Figma.
+## Verificações
+
+O HTML foi validado com `html-validate` e Nu Html Checker; CSS e JavaScript passaram por análise de sintaxe. A página foi conferida em 360, 390, 768, 1024, 1440 e 1920 px, incluindo menu mobile, FAQ, âncoras e links de WhatsApp. No Lighthouse local, as pontuações foram 90/100/100/100 no mobile e 100/100/100/100 no desktop para desempenho, acessibilidade, boas práticas e SEO.
