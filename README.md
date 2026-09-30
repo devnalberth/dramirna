@@ -4,7 +4,7 @@ Implementação mobile first em HTML, CSS e JavaScript puros a partir dos frames
 
 ## Estado
 
-**Fase 0 concluída.** Estrutura, tokens, documento HTML e assets locais preparados. O conteúdo das seções, componentes e interações serão implementados nas fases seguintes, uma seção por aprovação, conforme o briefing.
+**Fase 0 registrada no commit `fe122e5`. Fase 1 implementada para revisão.** Estrutura, tokens, documento HTML, assets locais e estilos dos componentes compartilhados preparados. O conteúdo das seções e as interações serão implementados nas fases seguintes, uma seção por aprovação, conforme o briefing.
 
 ## Como executar
 
@@ -15,7 +15,8 @@ Na raiz do projeto, rode `python3 -m http.server 8000` e abra `http://localhost:
 - `index.html`: head, dados estruturados da médica, skip link, header, main e footer.
 - `assets/css/tokens.css`: cores, tipografia, espaçamentos, raios e sombras confirmados no Figma.
 - `assets/css/base.css`: reset, estilos base e estrutura mínima do header e footer.
-- `assets/css/components.css`: reservado para a Fase 1.
+- `assets/css/components.css`: botões, etiquetas, selo, credenciais, cards, FAQ, faixas e divisores da Fase 1.
+- `preview-componentes.html`: prévia de desenvolvimento para conferir as variantes da Fase 1.
 - `assets/css/sections.css`: reservado para a Fase 2 em diante.
 - `assets/js/main.js` e `assets/js/modules/`: reservados para as interações futuras.
 - `assets/img/`: fotos em WebP e fallback, favicon e imagem de compartilhamento.
