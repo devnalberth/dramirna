@@ -369,15 +369,16 @@
 .bio__credentials { order: 7; display: grid; gap: 12px; margin: 0; padding: 0; list-style: none; }
 .bio__credentials li { display: flex; align-items: center; gap: 12px; color: var(--color-text-on-inverse); font: 400 16px/1.65 var(--font-body); }
 .bio__check { width: 32px; height: 32px; flex: none; display: grid; place-items: center; border-radius: 50%; background: var(--color-border-inverse); }
-.bio__check img { width: 18px; height: 18px; }
+.bio__check img { width: 18px; height: 18px; filter: brightness(0) invert(1); }
 .bio__desktop-only { display: none; }
 .bio .btn { order: 8; }
 @media (min-width: 1024px) {
   .bio { padding-block: 140px; }
   .bio::before { top: -120px; left: calc(50% + 420px); width: 760px; height: 760px; }
   .bio__inner { display: grid; grid-template-columns: 540px minmax(0, 1fr); align-items: center; gap: 96px; }
-  .bio__photos { order: initial; grid-template-columns: 300px 233px; gap: 7px; height: 640px; padding: 0; }
-  .bio__photo { height: 640px; border: 1px solid var(--color-border-strong); border-radius: 32px; }
+  .bio__photos { order: initial; display: flex; gap: 7px; height: 640px; padding: 0; }
+  .bio__photo { min-width: 0; height: 640px; flex: 300 1 0; border: 1px solid var(--color-border-strong); border-radius: 32px; transition: flex-grow .6s cubic-bezier(.22, 1, .36, 1); }
+  .bio__photo--smiling { flex-grow: 233; }
   .bio__signature { top: 585px; left: 0; gap: 10px; padding: 12px 23px 12px 19px; font-size: 17px; }
   .bio__signature img { width: 29px; height: 29px; }
   .bio__content { display: flex; flex-direction: column; align-items: flex-start; gap: 22px; min-width: 0; }
@@ -392,9 +393,17 @@
 }
 @media (min-width: 1024px) and (max-width: 1279px) {
   .bio__inner { grid-template-columns: minmax(0, 45%) minmax(0, 1fr); gap: 48px; }
-  .bio__photos { grid-template-columns: 56fr 44fr; }
+  .bio__photo--portrait { flex-grow: 56; }
+  .bio__photo--smiling { flex-grow: 44; }
   .bio__title { font-size: 38px; }
   .bio__title em { font-size: 42px; }
+}
+@media (min-width: 1024px) and (hover: hover) and (pointer: fine) {
+  .bio__photos:has(.bio__photo:hover) .bio__photo:not(:hover) { flex-grow: 173; }
+  .bio__photos .bio__photo:hover { flex-grow: 360; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .bio__photo { transition: none; }
 }
 
 /* Diferenciais: nós 20025:836 e 20016:262. */
