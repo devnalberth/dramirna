@@ -148,6 +148,11 @@
 .solution__arc { position: relative; padding-block: 84px 64px; background: var(--color-bg-subtle); }
 .solution__seal { position: absolute; z-index: 2; top: -38px; left: 50%; width: 76px; height: 76px; display: grid; place-items: center; transform: translateX(-50%); border: 5px solid var(--color-bg-surface); border-radius: 50%; background: var(--color-bg-inverse); box-shadow: var(--shadow-floating); }
 .solution__seal-desktop { display: none; }
+.solution__seal img, .location__divider img { animation: divider-logo-spin 28s linear infinite; }
+@keyframes divider-logo-spin { to { transform: rotate(360deg); } }
+@media (prefers-reduced-motion: reduce) {
+  .solution__seal img, .location__divider img { animation: none; }
+}
 .solution__inner { display: flex; flex-direction: column; gap: 22px; }
 .solution__copy { display: contents; }
 .solution__eyebrow { order: 1; }
