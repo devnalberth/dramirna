@@ -363,11 +363,16 @@
 .bio .eyebrow { order: 1; }
 .bio__title { order: 2; margin: 0; color: var(--color-text-on-inverse); font: 400 30px/1.25 var(--font-display); letter-spacing: -.01em; }
 .bio__title em { color: var(--color-text-on-inverse-muted); font: italic 500 33px/1.2 var(--font-destaque); }
-.bio__photos { order: 3; position: relative; display: grid; grid-template-columns: 200fr 146fr; gap: 4px; width: 100%; height: 400px; padding-bottom: 20px; }
-.bio__photo { display: block; height: 380px; overflow: hidden; border-radius: 24px; }
-.bio__photo img { width: 100%; height: 100%; object-fit: cover; }
-.bio__signature { position: absolute; top: 340px; left: 16px; display: flex; align-items: center; gap: 8px; max-width: calc(100% - 16px); padding: 10px 18px 10px 14px; border-radius: var(--radius-full); background: var(--color-bg-surface); box-shadow: var(--shadow-floating); color: var(--color-text-accent); font: 600 16px/1.65 var(--font-body); white-space: nowrap; }
+.bio__photos { order: 3; position: relative; display: flex; gap: 4px; width: 100%; height: 400px; padding-bottom: 20px; }
+.bio__photo { position: relative; display: block; min-width: 0; height: 380px; flex: 200 1 0; overflow: hidden; padding: 0; border: 0; border-radius: 24px; background: transparent; cursor: pointer; text-align: left; transition: flex-grow .6s cubic-bezier(.22, 1, .36, 1); }
+.bio__photo--smiling { flex-grow: 146; }
+.bio__photo picture, .bio__photo img { display: block; width: 100%; height: 100%; }
+.bio__photo img { object-fit: cover; }
+.bio__signature { position: absolute; bottom: 0; left: 0; display: flex; align-items: center; gap: 8px; max-width: 100%; padding: 10px 18px 10px 14px; border-radius: var(--radius-full); background: var(--color-bg-surface); box-shadow: var(--shadow-floating); color: var(--color-text-accent); font: 600 16px/1.4 var(--font-body); overflow-wrap: anywhere; transition: opacity .25s ease, transform .25s ease; }
 .bio__signature img { width: 22px; height: 22px; flex: none; }
+.bio__photos[data-active="portrait"] .bio__photo--portrait, .bio__photos[data-active="smiling"] .bio__photo--smiling { flex-grow: 360; }
+.bio__photos[data-active="portrait"] .bio__photo--smiling, .bio__photos[data-active="smiling"] .bio__photo--portrait { flex-grow: 173; }
+.bio__photos[data-active="smiling"] .bio__signature { opacity: 0; transform: translateY(8px); }
 .bio__lead { order: 4; margin: 0; color: var(--color-text-on-inverse); font: 400 17px/1.6 var(--font-body); }
 .bio__text { order: 6; margin: 0; color: var(--color-text-on-inverse-muted); font: 400 16px/1.65 var(--font-body); }
 .bio__text--mobile { order: 5; }
@@ -381,10 +386,10 @@
   .bio { padding-block: 140px; }
   .bio::before { top: -120px; left: calc(50% + 420px); width: 760px; height: 760px; }
   .bio__inner { display: grid; grid-template-columns: 540px minmax(0, 1fr); align-items: center; gap: 96px; }
-  .bio__photos { order: initial; display: flex; gap: 7px; height: 640px; padding: 0; }
-  .bio__photo { min-width: 0; height: 640px; flex: 300 1 0; border: 1px solid var(--color-border-strong); border-radius: 32px; transition: flex-grow .6s cubic-bezier(.22, 1, .36, 1); }
+  .bio__photos { order: initial; gap: 7px; height: 640px; padding: 0; }
+  .bio__photo { height: 640px; flex-grow: 300; border: 1px solid var(--color-border-strong); border-radius: 32px; }
   .bio__photo--smiling { flex-grow: 233; }
-  .bio__signature { top: 585px; left: 0; gap: 10px; padding: 12px 23px 12px 19px; font-size: 17px; }
+  .bio__signature { gap: 8px; padding: 12px 16px 12px 14px; font-size: 16px; }
   .bio__signature img { width: 29px; height: 29px; }
   .bio__content { display: flex; flex-direction: column; align-items: flex-start; gap: 22px; min-width: 0; }
   .bio__title { font-size: 44px; line-height: 1.2; }
@@ -406,9 +411,10 @@
 @media (min-width: 1024px) and (hover: hover) and (pointer: fine) {
   .bio__photos:has(.bio__photo:hover) .bio__photo:not(:hover) { flex-grow: 173; }
   .bio__photos .bio__photo:hover { flex-grow: 360; }
+  .bio__photos:has(.bio__photo--smiling:hover) .bio__signature { opacity: 0; transform: translateY(8px); }
 }
 @media (prefers-reduced-motion: reduce) {
-  .bio__photo { transition: none; }
+  .bio__photo, .bio__signature { transition: none; }
 }
 
 /* Diferenciais: nós 20025:836 e 20016:262. */
