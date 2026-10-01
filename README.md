@@ -19,9 +19,9 @@ Na raiz do projeto, rode `python3 -m http.server 8000` e abra `http://localhost:
 ## Pendências antes da publicação
 
 - Confirmar o domínio de produção para adicionar `canonical` e URLs absolutas de Open Graph e Twitter Card.
-- Confirmar bairro, sala, CEP, horário, formação, residência, tempo de atuação, tipos de DIU, prazo do resultado da microscopia e convênios. Os campos estão marcados com `.is-pending` e comentários `PENDENTE` no HTML.
+- Confirmar se há sala a informar no endereço. Confirmar também horário, formação, residência, tempo de atuação, tipos de DIU, prazo do resultado da microscopia e convênios; os campos exibidos que ainda estão pendentes têm `.is-pending` ou comentários `PENDENTE` no HTML.
 - Revisar as respostas das perguntas 2 a 11 do FAQ. O Figma apresenta a resposta completa apenas da primeira pergunta; as demais receberam textos provisórios para manter o acordeão funcional.
-- Incorporar o mapa oficial do Google Meu Negócio quando o link ou código de incorporação estiver disponível. O botão **Como chegar** já abre uma busca pelo endereço no Google Maps.
+- O mapa interativo do Google Maps usa o endereço informado. Caso haja um perfil oficial da clínica, conferir se o pin aponta para a entrada correta do consultório.
 
 ## Verificações
 
