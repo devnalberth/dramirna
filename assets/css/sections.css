@@ -6,7 +6,8 @@
 .site-header__brand { display: block; flex: none; }
 .site-header__brand picture, .site-header__logo { display: block; }
 .site-header__logo { width: 150px; height: 24px; }
-.site-header__menu-toggle { position: relative; width: 48px; height: 48px; flex: none; display: grid; place-items: center; padding: 0; border: 0; border-radius: var(--radius-full); background: var(--color-bg-subtle); color: var(--color-text-accent); cursor: pointer; }
+.site-header__menu-toggle { position: relative; width: 48px; height: 48px; flex: none; display: grid; place-items: center; padding: 0; border: 0; border-radius: var(--radius-full); background: var(--color-bg-subtle); color: var(--color-text-accent); cursor: pointer; transition: background-color .25s ease, transform .25s ease; }
+.site-header__menu-toggle:hover { transform: scale(1.06); background: var(--color-bg-accent); }
 .site-header__menu-toggle img { display: block; }
 .site-header__menu-toggle::before, .site-header__menu-toggle::after { content: ""; position: absolute; width: 22px; height: 2px; border-radius: var(--radius-full); background: var(--color-text-accent); opacity: 0; transition: transform .25s cubic-bezier(.32,.72,0,1), opacity .25s cubic-bezier(.32,.72,0,1); }
 .site-header.is-menu-open .site-header__menu-toggle img { opacity: 0; }
@@ -29,7 +30,8 @@
   .site-header__contact { display: inline-flex; flex: none; }
 }
 @media (prefers-reduced-motion: reduce) {
-  .site-header__menu-toggle::before, .site-header__menu-toggle::after { transition: none; }
+  .site-header__menu-toggle, .site-header__menu-toggle::before, .site-header__menu-toggle::after { transition: none; }
+  .site-header__menu-toggle:hover { transform: none; }
 }
 
 /* Hero: nós 20025:358 (mobile) e 20012:8 (desktop). */
