@@ -671,5 +671,6 @@
 .whatsapp-float:hover { transform: translateY(-3px); background: var(--color-action-primary-hover); }
 .whatsapp-float:active { transform: scale(.94); background: var(--color-action-primary-hover); }
 .whatsapp-float img { width: 30px; height: 30px; filter: brightness(0) invert(1); }
+@media (max-width: 1023px) { .whatsapp-float { bottom: max(20px, calc(env(safe-area-inset-bottom, 0px) + 16px)); } }
 @media (min-width: 1024px) { .whatsapp-float { right: 32px; bottom: 32px; width: 64px; height: 64px; } }
 @media (prefers-reduced-motion: reduce) { .whatsapp-float { transition: none; } .whatsapp-float:active { transform: none; } }

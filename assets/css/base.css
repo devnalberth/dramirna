@@ -21,7 +21,6 @@ a { color: inherit; }
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
 .skip-link { position: fixed; z-index: 20; top: var(--space-8); left: var(--space-8); padding: var(--space-12) var(--space-16); background: var(--color-bg-surface); transform: translateY(-150%); }
 .skip-link:focus { transform: translateY(0); }
-.is-pending { text-decoration: underline dotted; text-underline-offset: 3px; }
 .site-footer { background: var(--color-bg-inverse-deep); color: var(--color-text-on-inverse-muted); }
 .site-footer p { margin: 0; }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
