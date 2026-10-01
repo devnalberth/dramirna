@@ -654,6 +654,7 @@
   .site-footer__mobile-dot { display: none; }
   .site-footer__google { display: inline; }
   .site-footer__bar { flex-direction: row; justify-content: space-between; gap: 24px; padding-top: 24px; text-align: left; }
+  .site-footer__mobile-break { display: none; }
   .site-footer__bar-divider { display: inline; }
 }
 @media (min-width: 1024px) and (max-width: 1279px) {
