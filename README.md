@@ -57,9 +57,7 @@ DRA-MIRNA/
 │   ├── js/           # Interações da página
 │   └── svg/          # Ícones e elementos gráficos
 ├── .gitignore
-├── ASSETS.md         # Inventário de imagens e vetores
 ├── index.html        # Página principal
-├── preview-componentes.html
 └── README.md
 ```
 

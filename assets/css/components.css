@@ -85,20 +85,6 @@
 .marquee--ameixa { background: var(--color-bg-inverse); color: var(--color-text-on-inverse); }
 @keyframes marquee-loop { to { transform: translateX(-50%); } }
 
-.divider-wave { position: relative; overflow: hidden; }
-.divider-wave::before { content: ""; display: block; height: 50px; background: url("../svg/divisor-onda-hero.svg") center / cover no-repeat; }
-.divider-wave--como::before { background-image: url("../svg/divisor-onda-como-funciona.svg"); }
-.divider-wave--diferenciais::before { background-image: url("../svg/divisor-onda-diferenciais.svg"); }
-.divider-wave--galeria::before { background-image: url("../svg/divisor-onda-galeria.svg"); }
-.divider-cross { position: relative; height: 80px; overflow: hidden; }
-.divider-cross__marquee { position: absolute; left: -5%; width: 110%; }
-.divider-cross__marquee:first-child { top: 8px; transform: rotate(-4deg); }
-.divider-cross__marquee:last-child { top: 38px; transform: rotate(4deg); }
-.divider-arc { overflow: hidden; border-radius: var(--radius-full) var(--radius-full) 0 0; }
-.divider-star { display: flex; align-items: center; gap: var(--space-16); }
-.divider-star::before, .divider-star::after { content: ""; height: 1px; flex: 1; background: var(--color-border-strong); }
-.divider-star__icon { flex: none; }
-
 @media (min-width: 1024px) {
   .btn { font-size: 15px; }
   .btn__label { white-space: nowrap; }
@@ -107,12 +93,6 @@
   .card-servico__link { font-size: 15px; }
   .faq-item__question { font-size: 20px; }
   .faq-item { padding: var(--space-24) var(--space-32); }
-  .divider-wave::before { height: 120px; background-image: url("../svg/divisor-onda-hero-desktop.svg"); }
-  .divider-wave--como::before { background-image: url("../svg/divisor-onda-como-desktop.svg"); }
-  .divider-wave--diferenciais::before { background-image: url("../svg/divisor-onda-diferenciais-desktop.svg"); }
-  .divider-cross { height: 140px; }
-  .divider-cross__marquee:first-child { transform: rotate(-3deg); }
-  .divider-cross__marquee:last-child { transform: rotate(3deg); }
 }
 @media (prefers-reduced-motion: reduce) {
   .btn, .btn__icon, .card-servico__link img, .faq-item, .faq-item__icon { transition: none; }
