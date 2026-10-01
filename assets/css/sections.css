@@ -520,7 +520,8 @@
 @media (min-width: 1024px) {
   .faq { padding-block: 140px; background: var(--color-bg-subtle); }
   .faq__inner { display: grid; grid-template-columns: 400px minmax(0,1fr); align-items: start; gap: 80px; }
-  .faq__intro { display: flex; flex-direction: column; align-items: flex-start; gap: 24px; }
+  .faq__intro { position: sticky; top: calc(var(--header-height) + 24px); display: flex; flex-direction: column; align-items: flex-start; gap: 24px; }
+  .faq__intro > *, .faq__intro > .eyebrow { order: 0; }
   .faq__title { font-size: 44px; line-height: 1.2; }
   .faq__title em { font-size: 48px; line-height: 1.15; }
   .faq__description { display: block; margin: 0; color: var(--color-text-secondary); font: 400 16px/1.65 var(--font-body); }
