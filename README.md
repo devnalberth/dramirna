@@ -1,28 +1,68 @@
-# Landing page Dra. Mirna Santana
+# Landing Page — Dra. Mirna Santana
 
-Landing page responsiva em HTML, CSS e JavaScript puros, implementada a partir dos frames mobile `20025:351` e desktop `20011:16` do Figma. Cada fase foi registrada em um commit curto.
+[Tecnologias](#-tecnologias) | [Projeto](#-projeto) | [Layout](#-layout) | [Como executar](#-como-executar) | [Licença](#-licença)
 
-## Executar
+![Capa da landing page da Dra. Mirna Santana](./assets/img/CAPA.png)
 
-Na raiz do projeto, rode `python3 -m http.server 8000` e abra `http://localhost:8000/`.
+## 🚀 Tecnologias
 
-## Estrutura
+Este projeto foi desenvolvido com:
 
-- `index.html`: conteúdo, SEO, dados estruturados, seções e rodapé.
-- `assets/css/`: tokens, base, componentes e estilos das seções.
-- `assets/js/modules/`: menu, FAQ, faixas em movimento e links de WhatsApp.
-- `assets/img/` e `assets/svg/`: fotos e vetores locais exportados do Figma.
-- `assets/fonts/`: fontes locais em WOFF2 e respectivas licenças OFL.
-- `ASSETS.md`: inventário dos arquivos de imagem e vetor.
-- `preview-componentes.html`: prévia de desenvolvimento dos componentes base.
+- [HTML5](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
+- [CSS3](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
+- [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
+- [Figma](https://www.figma.com/)
 
-## Pendências antes da publicação
+## 💻 Projeto
 
-- Confirmar o domínio de produção para adicionar `canonical` e URLs absolutas de Open Graph e Twitter Card.
-- Confirmar se há sala a informar no endereço. Confirmar também horário, formação, residência, tempo de atuação, tipos de DIU, prazo do resultado da microscopia e convênios; os campos exibidos que ainda estão pendentes têm `.is-pending` ou comentários `PENDENTE` no HTML.
-- Revisar as respostas das perguntas 2 a 11 do FAQ. O Figma apresenta a resposta completa apenas da primeira pergunta; as demais receberam textos provisórios para manter o acordeão funcional.
-- O mapa interativo do Google Maps usa o endereço informado. Caso haja um perfil oficial da clínica, conferir se o pin aponta para a entrada correta do consultório.
+Landing page institucional da **Dra. Mirna Santana**, médica ginecologista em Vitória/ES. A página apresenta o atendimento, a investigação de corrimento de repetição com microscopia do conteúdo vaginal e outros cuidados oferecidos no consultório.
 
-## Verificações
+O conteúdo conduz a visitante da apresentação da Dra. Mirna até o agendamento pelo WhatsApp. A página inclui:
 
-O HTML foi validado com `html-validate` e Nu Html Checker; CSS e JavaScript passaram por análise de sintaxe. A página foi conferida em 360, 390, 768, 1024, 1440 e 1920 px, incluindo menu mobile, FAQ, âncoras e links de WhatsApp. No Lighthouse local, as pontuações foram 90/100/100/100 no mobile e 100/100/100/100 no desktop para desempenho, acessibilidade, boas práticas e SEO.
+- Apresentação da consulta e das credenciais profissionais
+- Explicação da microscopia e das etapas do atendimento
+- Informações sobre anticoncepção, DIU e Implanon
+- Serviços, diferenciais e apresentação da Dra. Mirna
+- Galeria do consultório e perguntas frequentes
+- Endereço, horários e mapa interativo do Google Maps
+- Botões de contato integrados ao WhatsApp
+
+## 🎨 Layout
+
+O layout foi implementado a partir dos designs desktop e mobile no Figma, com tipografia, cores, imagens e componentes adaptados para diferentes tamanhos de tela.
+
+- [Visualizar o design desktop no Figma](https://www.figma.com/design/upCoL6i9LzVC5u44eKi6Au/LANDING-PAGE---DRA-MIRNA?node-id=20011-16&m=dev)
+- [Visualizar o design mobile no Figma](https://www.figma.com/design/upCoL6i9LzVC5u44eKi6Au/LANDING-PAGE---DRA-MIRNA?node-id=20025-351&m=dev)
+
+Entre os recursos de interface estão o menu mobile, as faixas animadas, o acordeão de perguntas, as transições das imagens e as animações de entrada. O movimento é reduzido quando essa preferência está ativa no dispositivo.
+
+## ▶️ Como executar
+
+O projeto usa HTML, CSS e JavaScript puros, sem dependências ou etapa de build. Na raiz do repositório, inicie um servidor local:
+
+```bash
+python3 -m http.server 8000
+```
+
+Abra `http://localhost:8000/` no navegador.
+
+## 📁 Estrutura do projeto
+
+```text
+DRA-MIRNA/
+├── assets/
+│   ├── css/          # Estilos, componentes e tokens visuais
+│   ├── fonts/        # Fontes locais e licenças
+│   ├── img/          # Fotografias e capa do README
+│   ├── js/           # Interações da página
+│   └── svg/          # Ícones e elementos gráficos
+├── .gitignore
+├── ASSETS.md         # Inventário de imagens e vetores
+├── index.html        # Página principal
+├── preview-componentes.html
+└── README.md
+```
+
+## 📝 Licença
+
+Projeto criado para uso institucional da Dra. Mirna Santana.
