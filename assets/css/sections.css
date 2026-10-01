@@ -107,24 +107,24 @@
 }
 
 /* Divisor hero/credenciais: nós 20025:509 e 20012:43. */
-.divider-hero { position: relative; z-index: 2; height: 120px; overflow: visible; background: var(--color-bg-canvas); }
+.divider-hero { position: relative; z-index: 2; height: 80px; overflow: visible; background: var(--color-bg-canvas); }
 .divider-hero::before { position: absolute; top: -49px; left: 0; width: 100%; height: 50px; background-size: 100% 100%; pointer-events: none; }
 .divider-hero__bands { position: absolute; inset: 0; overflow: visible; }
 .divider-hero__ribbon { position: absolute; left: 50%; width: calc(100% + 500px); padding-block: 14px; transform-origin: center; }
-.divider-hero__ribbon--rose { top: -25px; transform: translateX(-50%) rotate(7deg); }
-.divider-hero__ribbon--ameixa { top: -25px; transform: translateX(-50%) rotate(-7deg); }
+.divider-hero__ribbon--rose { top: -45px; transform: translateX(-50%) rotate(7deg); }
+.divider-hero__ribbon--ameixa { top: -45px; transform: translateX(-50%) rotate(-7deg); }
 .divider-hero__ribbon .marquee__group { gap: 18px; padding-inline: 24px; }
 .divider-hero__ribbon .marquee__group > span { flex: none; font: 500 14px/1.2 var(--font-display); letter-spacing: .06em; text-transform: uppercase; }
 .divider-hero__ribbon .marquee__star { width: 11px; height: 11px; }
 .divider-hero__desktop-term { display: none; }
 
 /* Credenciais: nós 20025:544 e 20012:246. */
-.credentials { padding-block: 16px 48px; background: var(--color-bg-canvas); }
+.credentials { padding-block: 12px 40px; background: var(--color-bg-canvas); }
 .credentials__card { display: flex; flex-direction: column; align-items: flex-start; gap: 16px; padding: 22px 20px; border: 1px solid var(--color-border-default); border-radius: var(--radius-24); background: var(--color-bg-surface); box-shadow: var(--shadow-soft); }
 .credentials__divider { display: none; }
 
 /* Problema: nós 20025:566 e 20012:271. */
-.problem { padding-block: 56px 64px; background: var(--color-bg-blush); }
+.problem { padding-block: 48px 64px; background: var(--color-bg-blush); }
 .problem__inner { display: flex; flex-direction: column; gap: 20px; }
 .problem__left { display: contents; }
 .problem__intro { order: 1; display: flex; flex-direction: column; align-items: flex-start; gap: 20px; }
@@ -239,20 +239,20 @@
 }
 
 @media (min-width: 1024px) {
-  .divider-hero { height: 200px; background: var(--color-bg-subtle); }
+  .divider-hero { height: 100px; background: var(--color-bg-subtle); }
   .divider-hero::before { top: -119px; height: 120px; }
   .divider-hero__ribbon { width: calc(100% + 1200px); padding-block: 20px; }
-  .divider-hero__ribbon--rose { top: -10px; transform: translateX(-50%) rotate(4deg); }
-  .divider-hero__ribbon--ameixa { top: -40px; transform: translateX(-50%) rotate(-3deg); }
+  .divider-hero__ribbon--rose { top: -90px; transform: translateX(-50%) rotate(4deg); }
+  .divider-hero__ribbon--ameixa { top: -120px; transform: translateX(-50%) rotate(-3deg); }
   .divider-hero__ribbon .marquee__group { gap: 28px; padding-inline: 40px; }
   .divider-hero__ribbon .marquee__group > span { font-size: 15px; }
   .divider-hero__ribbon .marquee__star { width: 14px; height: 14px; }
   .divider-hero__desktop-term { display: block; }
-  .credentials { padding-block: 24px 72px; background: var(--color-bg-subtle); }
+  .credentials { padding-block: 16px 56px; background: var(--color-bg-subtle); }
   .credentials__card { min-height: 98px; flex-direction: row; align-items: center; justify-content: space-between; gap: 8px; padding: 28px 40px; }
   .credentials__divider { width: 1px; height: 40px; flex: none; display: block; background: var(--color-border-default); }
   .credentials .credencial__text { white-space: nowrap; }
-  .problem { padding-block: 100px 120px; background: var(--color-bg-subtle); }
+  .problem { padding-block: 80px 120px; background: var(--color-bg-subtle); }
   .problem__inner { display: grid; grid-template-columns: minmax(0, 470px) minmax(0, 1fr); align-items: center; gap: 72px; }
   .problem__left { display: flex; flex-direction: column; align-items: flex-start; gap: 24px; }
   .problem__intro { gap: 24px; }
