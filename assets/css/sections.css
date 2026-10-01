@@ -460,6 +460,16 @@
 .gallery__item figcaption { position: absolute; bottom: 12px; left: 12px; display: flex; align-items: center; gap: 6px; max-width: calc(100% - 24px); padding: 8px 14px 8px 12px; border-radius: var(--radius-full); background: rgb(255 255 255 / 92%); color: var(--color-text-primary); font: 400 14px/1.55 var(--font-body); white-space: nowrap; }
 .gallery__item figcaption img { width: 10px; height: 10px; flex: none; }
 .gallery__waiting-desktop { display: none; }
+@media (hover: hover) and (pointer: fine) {
+  .gallery__item picture img { transition: transform .8s cubic-bezier(.22, 1, .36, 1), filter .8s ease; }
+  .gallery__grid:has(.gallery__item:hover) .gallery__item:not(:hover) picture img { transform: scale(.98); filter: saturate(.78) brightness(.9); }
+  .gallery__grid .gallery__item:hover picture img { transform: scale(1.07); }
+  .gallery__item figcaption { transition: transform .5s cubic-bezier(.22, 1, .36, 1); }
+  .gallery__item:hover figcaption { transform: translateY(-5px); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .gallery__item picture img, .gallery__item figcaption { transition: none; }
+}
 @media (min-width: 1024px) {
   .gallery { padding-block: 170px 140px; }
   .gallery::before { display: none; }
