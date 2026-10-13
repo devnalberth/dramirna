@@ -65,7 +65,7 @@
 
 @media (max-width: 767px) {
   .hero__media { margin-top: 32px; }
-  .hero__identity { top: 215px; }
+  .hero__identity { top: 280px; }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
