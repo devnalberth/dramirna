@@ -215,7 +215,8 @@
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-  .process__steps { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .process__steps { display: flex; flex-wrap: wrap; justify-content: center; }
+  .process__steps .card-etapa { flex: 0 1 calc((100% - 28px) / 3); }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -262,9 +263,9 @@
   .process__title { font-size: 44px; line-height: 1.2; }
   .process__title em { font-size: 48px; line-height: 1.15; }
   .process__description { max-width: 620px; font-size: 18px; }
-  .process__steps { width: 100%; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 24px; }
+  .process__steps { width: 100%; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 16px; }
   .process__line { position: absolute; z-index: 0; top: 56px; left: 50px; width: calc(100% - 100px); height: 2px; display: block; }
-  .process__steps .card-etapa { min-height: 297px; }
+  .process__steps .card-etapa { min-height: 297px; padding: 24px 20px; }
   .process__actions { align-items: center; gap: 14px; }
   .process__mobile { display: none; }
   .process__desktop { display: inline; }
@@ -308,7 +309,9 @@
   .solution__title { font-size: 38px; }
   .solution__title em { font-size: 42px; }
   .process__steps { gap: 12px; }
-  .process__steps .card-etapa { padding: 22px; }
+  .process__steps .card-etapa { padding: 20px 16px; }
+  .process__steps .card-etapa__title { font-size: 18px; }
+  .process__steps .card-etapa__text { font-size: 13px; }
   .diu__inner { grid-template-columns: minmax(0, 1fr) 42%; gap: 48px; }
   .diu__title { font-size: 38px; }
   .diu__title em { font-size: 42px; }
@@ -529,6 +532,8 @@
 
 /* Notebook: preserve the desktop composition while keeping each key section in view. */
 @media (min-width: 1024px) and (max-width: 1599px) {
+  .process { padding-block: 64px 72px; }
+  .process__inner { gap: 32px; }
   .solution__arc { padding-block: 48px 36px; }
   .solution__inner { grid-template-columns: minmax(0, 42%) minmax(0, 1fr); gap: 56px; }
   .solution__media { width: 100%; height: 520px; }
