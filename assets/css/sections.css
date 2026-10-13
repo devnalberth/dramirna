@@ -633,6 +633,21 @@
 .site-footer__credit { color: var(--color-text-on-inverse-muted); font: 400 14px/1.55 var(--font-body); text-align: center; }
 .site-footer__credit a { color: inherit; text-decoration: none; }
 .site-footer__credit a:hover, .site-footer__credit a:focus-visible { text-decoration: underline; text-underline-offset: 3px; }
+@media (max-width: 1023px) {
+  .faq__contact .btn, .final-cta__card .btn { width: 100%; gap: 8px; padding-inline: 12px 8px; font-size: clamp(13px, 3.6vw, 14px); }
+  .faq__contact .btn__label, .final-cta__card .btn__label { white-space: nowrap; }
+  .faq__contact .btn__icon, .final-cta__card .btn__icon { width: 36px; height: 36px; }
+}
+@media (max-width: 359px) {
+  .faq__contact .btn, .final-cta__card .btn { gap: 4px; padding-inline: 8px 6px; font-size: 12px; letter-spacing: .04em; }
+  .faq__contact .btn__icon, .final-cta__card .btn__icon { width: 32px; height: 32px; }
+}
+@media (max-width: 767px) {
+  .site-footer__top, .site-footer__brand, .site-footer__columns, .site-footer__column { width: 100%; align-items: center; text-align: center; }
+}
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .faq__contact .btn { gap: 8px; padding-inline: 16px 8px; font-size: 13px; }
+}
 @media (min-width: 1024px) {
   .site-footer__inner { gap: 56px; padding-block: 96px 40px; }
   .site-footer__top { flex-direction: row; justify-content: space-between; gap: 72px; }
