@@ -1,6 +1,5 @@
 const revealGroups = [
   ['.hero__content', '.hero__media'],
-  ['.credentials__card'],
   ['.problem__intro', '.problem__turn', '.problem__cards .card-sintoma', '.problem__cta'],
   ['.solution__media', '.solution__eyebrow', '.solution__title', '.solution__lead', '.solution__text', '.solution__list', '.solution__cta'],
   ['.process__intro', '.process__steps .card-etapa', '.process__actions'],
