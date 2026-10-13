@@ -76,16 +76,6 @@
 .faq-item.is-open .faq-item__icon--closed, .faq-item:has(.faq-item__question[aria-expanded="true"]) .faq-item__icon--closed { display: none; }
 .faq-item__answer { margin: var(--space-12) 0 0; color: var(--color-text-secondary); font: 400 16px/1.65 var(--font-body); }
 
-.marquee { overflow: hidden; }
-.marquee__track { width: max-content; display: flex; align-items: center; }
-.marquee__group { display: flex; align-items: center; gap: var(--space-32); flex: none; padding-inline: var(--space-16); white-space: nowrap; }
-.marquee__star { flex: none; }
-.marquee.is-ready:not(.is-paused) .marquee__track { animation: marquee-loop 28s linear infinite; }
-.marquee:hover .marquee__track { animation-play-state: paused; }
-.marquee--rose { background: var(--color-bg-rose); color: var(--color-text-accent); }
-.marquee--ameixa { background: var(--color-bg-inverse); color: var(--color-text-on-inverse); }
-@keyframes marquee-loop { to { transform: translateX(-50%); } }
-
 @media (min-width: 1024px) {
   .btn { font-size: 15px; }
   .btn__label { white-space: nowrap; }
@@ -98,5 +88,4 @@
 @media (prefers-reduced-motion: reduce) {
   .btn, .btn__icon, .card-servico__link img, .faq-item, .faq-item__icon { transition: none; }
   .btn:hover, .btn:hover .btn__icon, .btn:active, .btn:active .btn__icon, .card-servico__link:hover img, .faq-item__question:hover .faq-item__icon { transform: none; }
-  .marquee__track { animation: none !important; }
 }

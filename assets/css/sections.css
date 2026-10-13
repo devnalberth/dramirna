@@ -204,12 +204,6 @@
 .care .card-servico__link::before { content: ""; position: absolute; inset: -8px 0; }
 .care .card-servico__link img { width: 18px; height: 18px; }
 
-/* Faixa antes da bio: nós 20025:767 e 20014:227. */
-.values-band { height: 76px; display: flex; align-items: center; }
-.values-band .marquee__group { gap: 22px; padding-inline: 11px; }
-.values-band .marquee__group > span { flex: none; font: italic 500 33px/1.2 var(--font-destaque); }
-.values-band .marquee__star { width: 14px; height: 14px; }
-
 @media (min-width: 768px) and (max-width: 1023px) {
   .care__cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
@@ -283,7 +277,7 @@
   .diu__chip-icon img { width: 18px; height: 18px; }
   .diu__mobile { display: none; }
   .diu__desktop { display: inline; }
-  .care { padding-block: 120px 140px; }
+  .care { padding-block: 120px 88px; }
   .care__inner { gap: 56px; }
   .care__header { flex-direction: row; align-items: flex-end; justify-content: space-between; gap: 48px; }
   .care__heading { gap: 20px; }
@@ -293,10 +287,6 @@
   .care__cards { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 36px; }
   .care .card-servico__body { min-height: 194px; flex: 1; }
   .care .card-servico__link { margin-top: auto; }
-  .values-band { height: 98px; }
-  .values-band .marquee__group { gap: 40px; padding-inline: 20px; }
-  .values-band .marquee__group > span { font-size: 40px; line-height: 1.15; }
-  .values-band .marquee__star { width: 18px; height: 18px; }
 }
 
 @media (min-width: 1024px) and (max-width: 1279px) {

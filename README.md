@@ -34,7 +34,7 @@ O layout foi implementado a partir dos designs desktop e mobile no Figma, com ti
 - [Visualizar o design desktop no Figma](https://www.figma.com/design/upCoL6i9LzVC5u44eKi6Au/LANDING-PAGE---DRA-MIRNA?node-id=20011-16&m=dev)
 - [Visualizar o design mobile no Figma](https://www.figma.com/design/upCoL6i9LzVC5u44eKi6Au/LANDING-PAGE---DRA-MIRNA?node-id=20025-351&m=dev)
 
-Entre os recursos de interface estão o menu mobile, a faixa animada de valores, o acordeão de perguntas, as transições das imagens e as animações de entrada. O movimento é reduzido quando essa preferência está ativa no dispositivo.
+Entre os recursos de interface estão o menu mobile, o acordeão de perguntas, as transições das imagens e as animações de entrada. O movimento é reduzido quando essa preferência está ativa no dispositivo.
 
 ## ▶️ Como executar
 
