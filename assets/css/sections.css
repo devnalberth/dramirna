@@ -579,7 +579,9 @@
 
 /* Notebook: preserve the desktop composition while keeping each key section in view. */
 @media (min-width: 1024px) and (max-width: 1599px) {
-  .solution__arc { padding-block: 48px; }
+  .solution__seal { top: -38px; width: 76px; height: 76px; border-width: 5px; }
+  .solution__seal-desktop { width: 38px; height: 38px; }
+  .solution__arc { padding-block: 60px 36px; }
   .solution__inner { grid-template-columns: minmax(0, 42%) minmax(0, 1fr); gap: 56px; }
   .solution__media { width: 100%; height: 520px; }
   .solution__photo { width: min(76%, 380px); height: 490px; }
@@ -596,6 +598,7 @@
   .bio__photos { height: 560px; }
   .bio__content { gap: 16px; }
   .differentials { padding-block: 64px 48px; }
+  .differentials::before { height: 54px; }
   .differentials__inner { gap: 24px; }
   .differentials__header { gap: 12px; }
   .differentials__title { font-size: 38px; }
@@ -605,7 +608,10 @@
   .differentials__cards { gap: 12px; }
   .differentials .card-sintoma { gap: 10px; padding: 14px; }
   .differentials .card-sintoma__icon { width: 36px; height: 36px; }
-  .location { padding-block: 52px; }
+  .location { padding-block: 60px 44px; }
+  .location__divider { top: -32px; height: 64px; }
+  .location__divider span { width: 64px; height: 64px; }
+  .location__divider img { width: 32px; height: 32px; }
   .location__inner { grid-template-columns: 44% minmax(0, 1fr); gap: 24px; }
   .location__card { gap: 16px; padding: 26px 30px; }
   .location__title { font-size: 38px; }
@@ -620,9 +626,13 @@
   .hero__note { top: 505px; left: -110px; }
 }
 
+@media (min-width: 1400px) and (max-width: 1599px) and (min-height: 851px) {
+  .divider-hero { margin-top: -60px; }
+}
+
 @media (min-width: 1024px) and (max-width: 1279px) {
   .differentials { padding-block: 56px 44px; }
-  .location { padding-block: 46px; }
+  .location { padding-block: 54px 38px; }
   .location__card { gap: 12px; padding: 22px 24px; }
   .location__details { gap: 12px; }
 }
