@@ -63,6 +63,11 @@
 .hero__identity-copy > span { font: 400 12px/1.35 var(--font-body); }
 .hero__decoration { display: none; }
 
+@media (max-width: 767px) {
+  .hero__media { margin-top: 32px; }
+  .hero__identity { top: 215px; }
+}
+
 @media (min-width: 768px) and (max-width: 1023px) {
   .hero__inner { min-height: 930px; }
   .hero__content { max-width: 600px; }
