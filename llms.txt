@@ -1,0 +1,24 @@
+# Dra. Mirna Santana
+
+> Site institucional da Dra. Mirna Santana, médica ginecologista em Vitória/ES. Apresenta seu atendimento, a investigação de corrimentos e infecções vaginais, métodos contraceptivos e formas de agendar uma consulta.
+
+Dra. Mirna Santana: CRM ES 18437, RQE 15655. O consultório fica na Av. Cezar Hilal, 505, Bento Ferreira, Vitória/ES, CEP 29050-657.
+
+O atendimento inclui avaliação ginecológica individualizada, microscopia do conteúdo vaginal e medição do pH quando indicadas. O site também apresenta orientação contraceptiva, inserção de DIU e Implanon, consultas de rotina e acompanhamento do climatério e da menopausa. A indicação de exames e tratamentos depende da avaliação de cada paciente.
+
+As informações do site são educativas e não substituem uma consulta médica. Para confirmar horários, disponibilidade ou outras dúvidas sobre o atendimento, fale com a equipe pelo WhatsApp.
+
+## Conteúdo do site
+
+- [Apresentação da Dra. Mirna](index.html#inicio): área de atuação, proposta do atendimento e credenciais profissionais.
+- [Corrimento de repetição](index.html#corrimento): sintomas e motivos para investigar a causa.
+- [Etapas da consulta](index.html#como-funciona): escuta, exame ginecológico, avaliação microscópica quando necessária, explicação do diagnóstico e plano de cuidado.
+- [DIU e Implanon](index.html#diu-e-implanon): orientação sobre métodos contraceptivos de longa duração.
+- [Sobre a Dra. Mirna](index.html#sobre): apresentação profissional e abordagem de cuidado.
+- [Perguntas frequentes](index.html#duvidas): respostas sobre a consulta, a microscopia e o agendamento.
+- [Localização](index.html#onde-atendo): endereço, horário informado no site, região atendida e mapa.
+
+## Contato
+
+- [Agendar pelo WhatsApp](https://wa.me/5527997930889): atendimento pelo número (27) 99793-0889.
+- [Instagram da Dra. Mirna](https://www.instagram.com/dramirna/): perfil indicado no site.
